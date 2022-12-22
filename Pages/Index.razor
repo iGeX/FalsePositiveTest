@@ -1,0 +1,17 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+
+<MyComponent @ref="GoodRef"></MyComponent>
+
+<MyComponent @ref="BadRef1"></MyComponent>
+
+<MyComponent @ref="BadRef2"></MyComponent>
+
+@code {
+    public MyComponent GoodRef { get; set; }
+    
+    public ComponentBase BadRef1 { get; set; }
+    
+    public IMyComponent BadRef2 { get; set; }
+}
